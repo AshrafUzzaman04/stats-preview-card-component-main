@@ -1,0 +1,195 @@
+// google fonts url links
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a0c1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+:root {
+  --font-familyh1: "Inter", sans-serif;
+  --font-family: "Lexend Deca", sans-serif;
+}
+
+// for tab & mobile screen
+@media only screen and (max-width: 1023px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1938;
+    flex-direction: column-reverse;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: var(--font-familyh1);
+    > .section-body {
+      width: 100%;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      padding-top: 6px;
+      padding: 36px 30px;
+      > h1 {
+        font-size: 28px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+      }
+      > p {
+        padding: 26px 0px 26px 0;
+        font-weight: 200;
+        line-height: 20px;
+        font-size: 14px;
+        color: hsla(0, 0%, 100%, 0.75);
+      }
+      > .count {
+        gap: 20px;
+        > .count-item2 {
+          padding: 20px 0;
+        }
+        h3 {
+          font-size: 22px;
+        }
+        span {
+          font-weight: 200;
+          font-family: var(--font-family);
+          color: hsla(0, 0%, 100%, 0.75);
+          font-size: 12px;
+        }
+      }
+    }
+    > .bg-img {
+      background: hsl(277deg, 64%, 61%) url(../images/image-header-mobile.jpg);
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 270px;
+      object-fit: cover;
+    }
+  }
+}
+
+// for desktop md screen
+@media only screen and (min-width: 1024px) {
+  main {
+    background-color: #1c1938;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 35px 3px black;
+    font-family: var(--font-familyh1);
+    > .section-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 460px;
+      padding: 60px 100px 60px 60px;
+      color: hsl(0, 0%, 100%);
+      > h1 {
+        font-size: 26px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+      }
+      > p {
+        padding: 0px 15px 20px 0;
+        font-weight: 200;
+        line-height: 18px;
+        font-size: 10px;
+        color: hsla(0, 0%, 100%, 0.75);
+      }
+      > .count {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-size: 18px;
+        }
+        span {
+          font-weight: 200;
+          font-family: var(--font-family);
+          color: hsla(0, 0%, 100%, 0.75);
+          font-size: 10px;
+        }
+      }
+    }
+    > .bg-img {
+      background: hsl(277deg, 64%, 61%) url(../images/image-header-desktop.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 440px;
+      height: 340px;
+    }
+  }
+}
+
+// for desktop lg screen
+@media only screen and (min-width: 1201px) {
+  main {
+    background-color: #1c1938;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 35px 3px black;
+    font-family: var(--font-familyh1);
+    > .section-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 580px;
+      padding: 60px 120px 60px 60px;
+      color: hsl(0, 0%, 100%);
+      > h1 {
+        font-size: 34px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+      }
+      > p {
+        padding: 0px 20px 25px 0;
+        font-weight: 200;
+        line-height: 25px;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.75);
+      }
+      > .count {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-size: 20px;
+        }
+        span {
+          font-weight: 200;
+          font-family: var(--font-family);
+          color: hsla(0, 0%, 100%, 0.75);
+          font-size: 12px;
+        }
+      }
+    }
+    > .bg-img {
+      background: hsl(277deg, 64%, 61%) url(../images/image-header-desktop.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 500px;
+      height: 400px;
+    }
+  }
+}
